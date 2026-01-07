@@ -5,4 +5,5 @@ print('Olá,', nome, '! Prazer em te conhecer!')
 #opção alternativa
 print('Olá, {}! Prazer em te conhecer!'.format(nome)) 
 
-
+#opção alternativa
+print(f'Olá, {nome}! Prazer em te conhecer!')

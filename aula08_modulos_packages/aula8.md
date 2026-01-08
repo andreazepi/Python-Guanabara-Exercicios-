@@ -1,4 +1,4 @@
-# Aula 8 — Módulos
+# Aula 08 — Módulos
 
 Este arquivo contém a explicação teórica sobre módulos e packages.
 
@@ -15,7 +15,7 @@ Vamos usar o exemplo de um módulo de pudim. Existem duas formas principais de u
 1. **Importação Geral**:
    Você importa o módulo inteiro. É útil quando você quer manter a referência de onde a função veio (da "loja" de doces).
    ```python
-   import aula8.doce.pudim as pudim 
+   import aula08_modulos.doce.pudim as pudim 
    
    pudim.fazer_pudim() 
    # pudim         -> Onde está (O Módulo/Local)
@@ -23,25 +23,25 @@ Vamos usar o exemplo de um módulo de pudim. Existem duas formas principais de u
    ```
    **Entendendo a linha `import ... as ...`:**
    - `import`: Comando para trazer o código.
-   - `aula8.doce.pudim`: O caminho completo até o arquivo (Pasta aula8 -> Pasta doce -> Arquivo pudim).
+   - `aula08_modulos.doce.pudim`: O caminho completo até o arquivo (Pasta aula08_modulos -> Pasta doce -> Arquivo pudim).
    - `as`: Significa "como" (usado para dar um apelido).
-   - `pudim`: O **apelido** que escolhemos. Sem isso, teríamos que escrever o nome completo (`aula8.doce.pudim.fazer_pudim()`) toda vez. Com o apelido, fica só `pudim.fazer_pudim()` não necessariamente eu preciso toda vez ter que digitar todo o caminho pra chegar até o arquivo.
+   - `pudim`: O **apelido** que escolhemos. Sem isso, teríamos que escrever o nome completo (`aula08_modulos.doce.pudim.fazer_pudim()`) toda vez. Com o apelido, fica só `pudim.fazer_pudim()` não necessariamente eu preciso toda vez ter que digitar todo o caminho pra chegar até o arquivo.
 
 2. **Importação Específica**:
    Você importa apenas a função específica, como se pegasse apenas o pudim para si, sem precisar carregar o resto.
    ```python
-   from aula8.doce.pudim import fazer_pudim
+   from aula08_modulos.doce.pudim import fazer_pudim
    
    fazer_pudim() 
    # fazer_pudim() -> Apenas a ação (Já dissemos de onde veio no 'from')
    ```
 
 ### Entendendo a Estrutura (Packages)
-Quando fazemos `from aula8.doce.pudim`, o Python segue as pastas do seu computador. Criar pastas para organizar categorias é o que chamamos de criar **Packages**.
+Quando fazemos `from aula08_modulos.doce.pudim`, o Python segue as pastas do seu computador. Criar pastas para organizar categorias é o que chamamos de criar **Packages**.
 
 **Visualizando a estrutura:**
 ```text
-aula8/ (Pasta Principal)
+aula08_modulos/ (Pasta Principal)
  └── doce/ (Pasta da Categoria)
       ├── pudim.py (Arquivo/Módulo)
       └── brigadeiro.py (Arquivo/Módulo)
@@ -106,3 +106,24 @@ Se você quiser ver todas as funções disponíveis dentro de um módulo diretam
 import math
 print(dir(math)) # Mostra uma lista com todos os nomes definidos no módulo math
 ```
+# Desafios:
+## Desafio 016
+Crie um programa que leia um número Real qualquer pelo teclado e mostre na tela a sua porção Inteira.
+Ex: 
+Digite um número: 6.127
+O número 6.127 tem a parte Inteira 6.
+
+## Desafio 017
+Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo. Calcule e mostre o comprimento da hipotenusa.
+
+## Desafio 018
+Faça um programa que leia um ângulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse ângulo.
+
+## Desafio 019
+Um professor quer sortear um dos seus quatro alunos para apagar o quadro. Faça um programa que ajude ele, lendo o nome dos alunos e escrevendo na tela o nome do escolhido.
+
+## Desafio 020
+O mesmo professor do desafio 019 quer sortear a ordem de apresentação de trabalhos dos alunos. Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.
+
+## Desafio 021
+Faça um programa em Python que abra e reproduza o áudio de um arquivo MP3.

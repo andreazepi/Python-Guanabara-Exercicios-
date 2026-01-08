@@ -35,31 +35,40 @@ lista_alunos = ['Maria', 'João', 'Pedro', 'Ana']
 print(f'O aluno escolhido foi: {random.choice(lista_alunos)}')
 
 # Exemplo de Pacote (NumPy)
-import numpy as np  # Importa o pacote NumPy com o alias "np" 
-array = np.array([1, 2, 3, 4, 5])  # Cria um array NumPy
-print(f'O array criado foi: {array}')
+try:
+    import numpy as np  # Importa o pacote NumPy com o alias "np" 
+    array = np.array([1, 2, 3, 4, 5])  # Cria um array NumPy
+    print(f'O array criado foi: {array}')
+except ImportError:
+    print('\n[AVISO] NumPy não instalado. Instale com: pip install numpy')
 
 # Exemplo de Pacote Externo (Pandas) - Requer: pip install pandas
-import pandas as pd  # Importa o pacote Pandas com o alias "pd" 
+try:
+    import pandas as pd  # Importa o pacote Pandas com o alias "pd" 
 
-data = {
-    'Nome': ['Ana', 'Bruno', 'Carlos', 'Diana'],
-    'Idade': [25, 30, 35, 28],
-    'Data_Admissao': ['15/01/2023', '10/02/2023', '20/03/2023', '15/01/2023'],
-    'Departamento': ['TI', 'RH', 'TI', 'Financeiro']
-}
-df = pd.DataFrame(data)  # Cria um DataFrame Pandas a partir do dicionário
-print('O DataFrame criado foi:')
-print(df)
+    data = {
+        'Nome': ['Ana', 'Bruno', 'Carlos', 'Diana'],
+        'Idade': [25, 30, 35, 28],
+        'Data_Admissao': ['15/01/2023', '10/02/2023', '20/03/2023', '15/01/2023'],
+        'Departamento': ['TI', 'RH', 'TI', 'Financeiro']
+    }
+    df = pd.DataFrame(data)  # Cria um DataFrame Pandas a partir do dicionário
+    print('O DataFrame criado foi:')
+    print(df)
 
-# O poder do Pandas: Calcular estatísticas instantaneamente
-print(f'A média das idades é: {df["Idade"].mean()}')
+    # O poder do Pandas: Calcular estatísticas instantaneamente
+    print(f'A média das idades é: {df["Idade"].mean()}')
 
-# Filtrando dados (Ex: Apenas do departamento de TI)
-print('\nFuncionários de TI:')
-print(df[df['Departamento'] == 'TI'])
+    # Filtrando dados (Ex: Apenas do departamento de TI)
+    print('\nFuncionários de TI:')
+    print(df[df['Departamento'] == 'TI'])
+except ImportError:
+    print('\n[AVISO] Pandas não instalado. Instale com: pip install pandas')
 
 # Exemplo com a biblioteca emoji
 # Instalação no terminal: pip install emoji
-import emoji
-print(emoji.emojize("Olá, Mundo :sunglasses:", language='alias'))
+try:
+    import emoji
+    print(emoji.emojize("Olá, Mundo :sunglasses:", language='alias'))
+except ImportError:
+    print('\n[AVISO] Emoji não instalado. Instale com: pip install emoji')

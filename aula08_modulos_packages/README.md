@@ -1,15 +1,15 @@
-# Aula 8 — Módulos e Packages
+# Aula 08 — Módulos e Packages
 
-Conteúdo da pasta `aula8/`:
+Conteúdo da pasta `aula08_modulos/`:
 
 - `aula8.md` — explicação teórica.
-- `exemplos.py` — exemplos executáveis (use `python -m aula8.exemplos`).
+- `exemplos.py` — exemplos executáveis (use `python -m aula08_modulos.exemplos`).
 - `meu_modulo.py`, `bebidas.py` — módulos de exemplo.
 - `doce/` — package com `pudim.py`.
 
 ## Como executar
 ```bash
-python -m aula8.exemplos
+python -m aula08_modulos.exemplos
 ```
 
 ## Testes

@@ -1,27 +1,36 @@
-# Python Exercicios 
+# 🐍 Curso de Python (Gustavo Guanabara)
 
-Repositório com exercícios e explicações das aulas de Python do professor Guanabara.
+Este repositório contém minha jornada de estudos, exercícios resolvidos e anotações teóricas baseadas no Curso em Vídeo de Python 3.
 
 ---
 
-## Sobre este repositório
-Este repositório organiza material das aulas: explicações teóricas, exemplos executáveis e exercícios resolvidos.
-O conteúdo principal foi reorganizado por aula para facilitar navegação e estudo.
+## 📂 Estrutura do Projeto
 
-### Estrutura (pastas na raiz)
-- `aula8/` — **Conteúdo da Aula 8**: explicação (`aula8.md`), exemplos executáveis (`exemplos.py`) e módulos relacionados (`meu_modulo.py`, `bebidas.py`, `doce/`, etc.).
-- `exercicios/` — **Exercícios resolvidos** (ex001 → ex015) — soluções e exercícios práticos das aulas.
-- `tests/` — **Testes unitários** para os exemplos (`pytest`).
-- `LICENSE` — arquivo de licença do repositório.
-- `.gitignore` — padrões de arquivos/pastas ignorados pelo Git (ex.: `.venv/`, `.pytest_cache/`).
+O conteúdo está organizado nas seguintes pastas para facilitar a navegação:
 
-> Observação: para manter compatibilidade, alguns módulos podem ser importados via `aula8.*` (ex.: `aula8.meu_modulo`).
+### 1. 📚 Anotações Teóricas (`anotacoes/`)
+Resumos detalhados dos conceitos aprendidos, separados por temas:
+- **Fundamentos**: Variáveis, Tipos Primitivos, Input/Output.
+- **Estruturas de Controle**: `if`, `else`, `for`, `while`.
+- **Coleções**: Listas, Tuplas, Dicionários.
+- **Ferramentas**: Git, GitHub e Depuração.
 
-## Como executar
-1. Rodar os exemplos da Aula 8:
+### 2. 💻 Exercícios Resolvidos (`exercicios_resolvidos/`)
+Contém a resolução dos desafios propostos no curso (ex001 ao ex015 e outros), focados em lógica de programação inicial.
+
+### 3. 📦 Módulos e Pacotes (`aula08_modulos/`)
+Conteúdo específico da **Aula 8**, focado em modularização.
+- Explicação sobre `import`, `from` e criação de pacotes.
+- Exemplos práticos (`bebidas.py`, `doce/`, etc).
+
+---
+
+## 🚀 Como Executar
+
+Para rodar os exemplos de módulos (Aula 8):
 
 ```bash
-python -m aula8.exemplos
+python -m aula08_modulos.exemplos
 ```
 
 2. Rodar os testes (recomenda-se usar um ambiente virtual):
@@ -33,4 +42,4 @@ python -m pytest -q
 
 ---
 
-Se quiser, abra `aula8/aula8.md` para a explicação teórica ou `exercicios/README.md` para navegar pelos exercícios resolvidos.
+Se quiser, abra `aula08_modulos/aula8.md` para a explicação teórica ou `exercicios_resolvidos/README.md` para navegar pelos exercícios resolvidos.

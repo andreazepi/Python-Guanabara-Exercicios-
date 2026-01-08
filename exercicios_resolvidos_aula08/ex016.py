@@ -5,6 +5,12 @@
 # O número 6.127 tem a parte Inteira 6
 
 import math
-numero = float(input('Digite um número real:'))
-print(f"O número {numero} tem a parte inteira {math.trunc(numero)}")
+numero = float(input('Digite um número:'))
+print(f"O número {numero} tem o valor inteiro {math.trunc(numero)}")
+
+
+
+# Outra forma de fazer sem usar a biblioteca math:
+# numero = float(input('Digite um número:'))
+# print(f"O número {numero} tem o valor inteiro {int(numero)}")
 

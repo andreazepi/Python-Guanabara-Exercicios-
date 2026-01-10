@@ -25,23 +25,7 @@ Contém a resolução dos desafios propostos no curso (ex001 ao ex015 e outros),
 (`exercicios_resolvidos_aula08`)
 Comtém a resolução dos desafios propostos no curso da aula 8.
 
----
-
-## 🚀 Como Executar
-
-1. Para rodar os exemplos de módulos (Aula 8):
-
-```bash
-python -m aula08_modulos.exemplos
-```
-
-2. Rodar os testes (recomenda-se usar um ambiente virtual):
-
-```bash
-pip install -r aula08_modulos/requirements.txt
-python -m pytest -q
-```
+### 4. 📔 Diário de Estudos (`DIARIO_ESTUDOS.md`)
+Um registro detalhado da minha rotina, cronologia de aprendizado e planejamento de carreira. 
 
 ---
-
-Se quiser, abra `aula08_modulos/aula8.md` para a explicação teórica ou `exercicios_resolvidos/README.md` para navegar pelos exercícios resolvidos.

@@ -28,4 +28,8 @@ Comtém a resolução dos desafios propostos no curso da aula 8.
 ### 4. 📔 Diário de Estudos (`DIARIO_ESTUDOS.md`)
 Um registro detalhado da minha rotina, cronologia de aprendizado e planejamento de carreira. 
 
+### 5. 🏕️ FreeCodeCamp (`freecodecamp_python/`)
+Anotações e exercícios do curso de Python do FreeCodeCamp.
+- **Noções Básicas**: Introdução, Variáveis, Tipos de Dados e Strings.
+
 ---

@@ -1,0 +1,5 @@
+Python é muito legal
+Estou aprendendo lógica de programação
+Contadores servem para contar itens
+Acumuladores servem para somar valores
+Fim do arquivo de teste

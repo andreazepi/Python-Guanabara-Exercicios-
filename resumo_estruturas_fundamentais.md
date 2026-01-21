@@ -25,6 +25,24 @@ else:
 - **Feature Flags:** Ativar uma funcionalidade nova apenas para um grupo de usuários beta.
 - **Tratamento de Erros:** Se a resposta do banco de dados vier vazia (`if not dados:`), mostrar mensagem de "Nenhum registro encontrado".
 
+## 1.1. Estrutura de Escolha (`match` / `case`)
+*(Disponível a partir do Python 3.10)*
+
+### 💀 Esqueleto
+```python
+match variavel:
+    case 1:
+        # Faz algo se for 1
+    case 2:
+        # Faz algo se for 2
+    case _:
+        # O "Curinga" (equivalente ao else)
+```
+
+### 💡 Quando usar?
+- Quando você tem **uma** variável e quer testá-la contra **vários** valores específicos (ex: Menu de opções 1, 2, 3).
+- Substitui cadeias longas e feias de `if opcao == 1 ... elif opcao == 2 ...`.
+
 ---
 
 ## 2. Laços de Repetição: `for`
@@ -46,6 +64,42 @@ for item in lista_de_itens:
 3. **Parte 3 (A Ação):** O que eu faço com esse `item` agora que o tenho na mão?
 
 ### 💡 Quando usar?
+O `for` é o "canivete suíço" das repetições. Ele brilha em 4 situações principais:
+1. **Iteração (Percorrer):** Ler cada item de uma lista, tupla ou string.
+2. **Contagem (Acumuladores):** Contar quantas vezes algo acontece ou somar valores (ex: total do carrinho).
+3. **Filtragem (Seleção):** Usar com `if` para pegar só o que serve (ex: só números pares).
+4. **Transformação (Mapeamento):** Gerar uma nova lista com valores alterados (ex: converter nomes para maiúsculo).
+
+#### Exemplos Práticos:
+```python
+# 1. Iteração (Percorrer)
+frutas = ['Maçã', 'Banana', 'Uva']
+for fruta in frutas:
+    print(fruta)
+
+# 2. Contagem (Acumuladores)
+numeros = [10, 20, 35, 40]
+pares = 0
+for n in numeros:
+    if n % 2 == 0:
+        pares += 1
+print(f'Temos {pares} pares.')
+
+# 3. Filtragem (Seleção)
+precos = [100, 500, 25, 1000]
+caros = []
+for p in precos:
+    if p > 200:
+        caros.append(p)
+print(caros) # [500, 1000]
+
+# 4. Transformação (Mapeamento)
+nomes = ['andre', 'maria']
+maiusculos = []
+for nome in nomes:
+    maiusculos.append(nome.upper())
+print(maiusculos) # ['ANDRE', 'MARIA']
+```
 
 ### 💼 Cenário Real (Dev Junior / Estágio)
 - **Processamento em Lote:** Enviar um e-mail de "Feliz Natal" para uma lista de 5.000 clientes (`for cliente in lista_clientes:`).

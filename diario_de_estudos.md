@@ -14,6 +14,7 @@
     4. **Framework (Flask, FastAPI ou Django):** Ferramentas para criar o servidor.
     5. **Integração e ORM (CRUD Completo):** Unindo Python e Banco de Dados.
     6. **Segurança Básica:** Proteção e boas práticas.
+    7. **Boas Práticas (Clean Code & Debugging):** Escrever código legível e saber encontrar erros.
 
 ---
 

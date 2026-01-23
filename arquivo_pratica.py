@@ -1,1 +1,0 @@
-# Hoje foi só pratica e refazendo os exercicios da aula 12 sobre if/else pra ter certeza de que sei mesmo utilizar essas funções..

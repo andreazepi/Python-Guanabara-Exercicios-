@@ -120,7 +120,20 @@ Crie um programa que leia uma frase qualquer e diga se ela é um palíndromo, de
 Oque é um palindromo? pesquisar.
 
 ### Desafio 054
-Crie um programa que leia o ano de nascimento de sete pessoas. No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.
+## 📝 Desafio 3: O Desenhista (Padrões Visuais)
+**Objetivo:** Manipular a quantidade de repetições do loop interno baseada no loop externo.
+
+**Enunciado:** Faça um programa que desenhe um triângulo na tela.
+```text
+*
+**
+***
+****
+*****
+```
+- Loop Externo: Controla a linha (1 a 5).
+- Loop Interno: Imprime o asterisco `*`.
+- **O Pulo do Gato:** O loop interno deve ir de 0 até o número da linha atual. Se estou na linha 3, imprimo 3 asteriscos.
 
 ### Desafio 055
 Faça um programa que leia o peso de cinco pessoas. No final, mostre qual foi o maior e o menor peso lidos.

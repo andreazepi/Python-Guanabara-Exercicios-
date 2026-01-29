@@ -1,10 +1,4 @@
-Aqui está o resumo limpo e focado 100% em **Python**, sem as referências ao Portugol/Visualg.
 
-Pode copiar e colar no seu arquivo `.md` no VS Code.
-
----
-
-```markdown
 # 🐍 Resumo: Algoritmos e Lógica de Programação (Python)
 
 ## 1. Entrada e Saída de Dados
@@ -166,7 +160,7 @@ limite = int(input("Quer contar até quanto? "))
 
 while contador <= limite:
     print(contador)
-    contador += 1 # Incremento
+    contador += 1 # Incremento ou seja ele é o contador, sempre conta +1.
 print("Fim da contagem.")
 
 ```

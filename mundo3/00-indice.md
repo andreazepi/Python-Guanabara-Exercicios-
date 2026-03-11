@@ -1,15 +1,17 @@
 # Python — Mundo 3 (Curso em Vídeo) — Índice
 
 ## Como usar
-- Leia o arquivo da aula
-- Faça os exemplos
-- Resolva/registre os exercícios no final
-- Marque os checkboxes
+- Leia o arquivo do tema
+- Faça pequenos testes no Python
+- Resolva os desafios e marque no `99-exercicios.md`
+- Guarde o link/caminho da sua solução ao lado de cada desafio
 
-## Aulas
-- [Aula 22 — Módulos e Pacotes](./aulas_anotacoes/aula22-modulos-e-pacotes.md)
-- [Aula 23 — Tratamento de Erros e Exceções](./aulas_anotacoes/aula23-erros-e-excecoes.md)
-- [Aula 24 — Manipulação de Arquivos](./aulas_anotacoes/aula24-arquivos.md)
+## Temas
+- [01 — Modularização](./01-modularizacao.md)
+- [02 — Pacotes](./02-pacotes.md)
+- [03 — Erros e Exceções](./03-erros-e-excecoes.md)
+- [04 — Arquivos](./04-arquivos.md)
+- [05 — Projeto final / revisão](./05-projeto-final.md)
 
 ## Exercícios
-- [Lista de exercícios (Mundo 3)](./99-exercicios.md)
+- [Lista completa (096–115)](./99-exercicios.md)

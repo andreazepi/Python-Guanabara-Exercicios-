@@ -33,3 +33,18 @@ Anotações e exercícios do curso de Python do FreeCodeCamp.
 - **Noções Básicas**: Introdução, Variáveis, Tipos de Dados e Strings.
 
 ---
+
+## 🚀 App Web do TCC
+
+Foi adicionada uma estrutura pronta para publicação com Streamlit:
+- App: `tcc_app/app.py`
+- Dependências: `requirements.txt`
+- Configuração visual: `.streamlit/config.toml`
+- Guia de deploy: `COMO_PUBLICAR_TCC.md`
+
+Também foi adicionada uma versão web React (a partir do seu `App.jsx`):
+- Frontend: `tcc_app/web/src/App.jsx`
+- Configuração do projeto: `tcc_app/web/package.json`
+- Chave de API (modelo): `tcc_app/web/.env.example`
+
+Para rodar localmente e publicar com link público, siga o passo a passo em `COMO_PUBLICAR_TCC.md`.
